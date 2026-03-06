@@ -51,8 +51,10 @@ export default function CafePage() {
 
       {/* Stats */}
       <section style={{ padding: '80px 0', background: 'var(--atl-dark)' }}>
-        <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2px' }} className="stats-grid">
-          {COFFEE_DATA.stats.map((s, i) => (
+<div
+  className="container stats-grid"
+  style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2px' }}
+>          {COFFEE_DATA.stats.map((s, i) => (
             <div key={s.label} className={`reveal reveal-delay-${i}`} style={{ padding: '48px 40px', background: 'rgba(255,255,255,0.03)', textAlign: 'center' }}>
               <span style={{ fontFamily: 'var(--font-display)', fontSize: '56px', fontWeight: 900, color: 'var(--atl-amber)', display: 'block' }}>{s.num}</span>
               <span style={{ fontSize: '12px', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.4)' }}>{s.label}</span>
