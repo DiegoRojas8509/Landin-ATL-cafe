@@ -190,4 +190,4 @@ export const SEO_DEFAULTS = {
     handle:      '@atl_cafe',
     cardType:    'summary_large_image',
   },
-} as const
+}
