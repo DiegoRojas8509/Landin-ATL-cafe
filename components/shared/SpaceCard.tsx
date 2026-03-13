@@ -80,7 +80,7 @@ export default function SpaceCard({ space, large }: SpaceCardProps) {
             fontFamily:    'var(--font-wide)',
             fontSize:      '16px',
             letterSpacing: '0.35em',
-            color:       '#fff',
+            color: '#B5622A',
             marginBottom:  '8px',
           }}
         >
