@@ -14,7 +14,7 @@ export default function SpacesGrid() {
       <div className="container">
         <div className="spaces-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gridTemplateRows: 'auto auto', gap: '2px' }}>
           {SPACES.map((space, i) => (
-            <SpaceCard key={space.id} space={space} large={i === 0} />
+           <SpaceCard key={space.id} space={space} />
           ))}
         </div>
       </div>

@@ -1,5 +1,6 @@
 import SectionLabel from '@/components/shared/SectionLabel'
 import { COFFEE_DATA } from '@/lib/constants'
+import Image from "next/image"
 
 export default function CoffeeOrigin() {
   return (
@@ -17,8 +18,22 @@ export default function CoffeeOrigin() {
            * Aspect ratio: 3:4 (portrait)
            * When ready: replace the gradient div with <Image fill /> inside this wrapper
            */}
-          <div className="reveal" style={{ aspectRatio: '3/4', background: 'linear-gradient(135deg, #6B3A2A 0%, #B5622A 100%)', position: 'relative', overflow: 'hidden' }}>
-            <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '4px' }}>
+<div
+  className="reveal"
+  style={{
+    aspectRatio: '3/4',
+    position: 'relative',
+    overflow: 'hidden'
+  }}
+>
+  <Image
+    src="/images/coffee/certificacion.jpeg"
+    alt="Origen del café ATL"
+    fill
+    style={{ objectFit: "cover" }}
+  />
+  
+              <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '4px' }}>
               <span style={{ fontFamily: 'var(--font-wide)', fontSize: '11px', letterSpacing: '0.3em', color: 'rgba(255,255,255,0.2)' }}>FOTO</span>
               <span style={{ fontFamily: 'var(--font-wide)', fontSize: '11px', letterSpacing: '0.3em', color: 'rgba(255,255,255,0.2)' }}>ORIGEN CAFÉ</span>
             </div>

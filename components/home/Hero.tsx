@@ -1,5 +1,6 @@
 import { SITE } from '@/lib/constants'
 import HeroCoffeeBeans from '@/components/effects/HeroCoffeeBeans'
+import Image from "next/image"
 
 export default function Hero() {
   return (
@@ -11,7 +12,7 @@ export default function Hero() {
       }}  
     >
 
-                    <section
+              <section
                 style={{
                   position: 'relative',
                   overflow: 'hidden',
@@ -24,17 +25,20 @@ export default function Hero() {
                   {/* contenido del hero */}
                 </div>
               </section>
-      {/*
-       * IMAGE SLOT — HERO BACKGROUND
-       * File: /public/images/hero/hero-main.jpg
-       * Subject: Full-bleed atmospheric photo of ATL Café interior OR dramatic coffee pour
-       * Min resolution: 1920×1080px | Format: landscape
-       * When ready: replace the gradient div below with a Next.js <Image fill priority />
-       */}
-      <div style={{
-        position: 'absolute', inset: 0,
-        background: 'linear-gradient(135deg, #1A0E08 0%, #3D2011 40%, #6B3A2A 70%, #B5622A 100%)',
-      }} />
+      {/* <Image
+        src="/images/hero/hero1.webp"
+        alt="ATL Café"
+        fill
+        priority
+        style={{ objectFit: "cover", zIndex: 0 }}
+      /> */}
+
+<div style={{
+  position: 'absolute', inset: 0, zIndex: 1,
+  background: 'linear-gradient(to top, rgba(26,14,8,0.9) 0%, rgba(26,14,8,0.3) 50%, rgba(26,14,8,0.1) 100%)',
+}} />
+
+
       <div style={{
         position: 'absolute', inset: 0, zIndex: 1,
         background: 'linear-gradient(to top, rgba(26,14,8,0.9) 0%, rgba(26,14,8,0.3) 50%, rgba(26,14,8,0.1) 100%)',

@@ -28,7 +28,8 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <Link href="/" style={{ fontFamily: 'var(--font-wide)', fontSize: '32px', letterSpacing: '0.12em', color: '#fff', display: 'block', marginBottom: '16px', textDecoration: 'none' }}>
-            ATL<span style={{ color: 'var(--atl-amber)' }}>·</span>
+                      <img src="/images/logo3.png" alt="ATL Café" style={{ height: '35px', width: 'auto' }}/>
+
           </Link>
           <p style={{ fontSize: '13px', lineHeight: 1.8, color: 'rgba(255,255,255,0.4)', maxWidth: '280px', marginBottom: '28px' }}>
             {SITE.description}

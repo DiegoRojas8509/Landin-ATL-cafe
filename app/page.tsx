@@ -19,7 +19,6 @@ export default function HomePage() {
       <Manifesto />
       <SpacesGrid />
       <CoffeeOrigin />
-      <Philosophy />
       <FairTradeStrip />
       <VisitSection />
     </>

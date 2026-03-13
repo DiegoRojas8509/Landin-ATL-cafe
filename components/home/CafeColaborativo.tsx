@@ -127,7 +127,7 @@ export default function CafeColaborativo() {
             }}
           >
             <a
-              href="AQUI_VA_TU_LINK_DE_TALLY"
+              href="https://tally.so/r/9q1z1E"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn--copper"

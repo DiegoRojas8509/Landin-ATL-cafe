@@ -25,6 +25,10 @@ export const NAV_LINKS = [
   { label: 'Galería',      href: '/galeria' },
   { label: 'Cursos',       href: '/cursos' },
   { label: 'Comunidad',    href: '/comunidad' },
+  { label: 'Consultorios',    href: '/psicologia' },
+    { label: 'Hazart',    href: '/hazart' },
+
+
 ] as const
 
 // ============================================================
@@ -55,8 +59,8 @@ export const SPACES: Space[] = [
     shortDesc: 'Café orgánico de Chiapas y Oaxaca, trabajado con comercio justo y trato directo con los cafetaleros.',
     longDesc:  'Contamos con café de especialidad de Chiapas y de Oaxaca donde se trabaja por medio del comercio justo. Brindamos apoyo de asesorías y finanzas a los cafetaleros, trabajando sin intermediarios, lo que permite tener la comunicación directa con ellos, asegurando el pago justo y el café de especialidad de calidad y con certificaciones.',
     href:      '/cafe',
-    cardImage: '/images/spaces/cafe_especialidad.webp',
-    heroImage: '/images/spaces/cafe_especialidad.webp',
+    cardImage: '/images/spaces/cafe_colaborativo.webp',
+    heroImage: '/images/spaces/cafe_colaborativo.webp',
     highlights: ['Sin intermediarios', 'Comercio Justo', 'Q-Score 83.5', 'Chiapas · Oaxaca'],
   },
   {
@@ -92,6 +96,29 @@ export const SPACES: Space[] = [
     heroImage: '/images/spaces/cursos1.webp',
     highlights: ['Fecha a elegir', 'Dinámica de consumo', 'Joyería · Cerámica · Serigrafía', 'Apoyo a talleristas'],
   },
+  {
+    id:        'psicologia',
+    tag:       '05 — Psicologia',
+    name:      'Consultorios Psicologicos',
+    shortDesc: 'Un espacio seguro para tomar terapia.',
+    longDesc:  'Contamos con espacios de consultios psicologicos para si estas en el ambito de la psicologia clinica pueda hacer uso de los espacios para dar tu servicio de terapia.',
+    href:      '/psicologia',
+    cardImage: '/images/spaces/psico2.webp',
+    heroImage: '/images/spaces/psico2.webp',
+    highlights: ['Sin intermediarios', 'Comercio Justo', 'Q-Score 83.5', 'Chiapas · Oaxaca'],
+  },
+  {
+    id:        'hazart',
+    tag:       '06 — Hazart',
+    name:      'Salon de belleza',
+    shortDesc: 'Darte el placer de consentirte un rato.',
+    longDesc:  'Hazart es un salon de belleza con multitud de servicios para que tengas una tarde espectacular dandote lo que te mereces.',
+    href:      '/hazart',
+    cardImage: '/images/spaces/hazart.webp',
+    heroImage: '/images/spaces/hazart.webp',
+    highlights: ['Sin intermediarios', 'Comercio Justo', 'Q-Score 83.5', 'Chiapas · Oaxaca'],
+  }
+
 ]
 
 // ============================================================
