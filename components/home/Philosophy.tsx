@@ -3,7 +3,7 @@ import { PHILOSOPHY_ITEMS } from '@/lib/constants'
 
 export default function Philosophy() {
   return (
-    <section style={{ padding: '120px 0', background: 'var(--atl-dark)', position: 'relative', overflow: 'hidden' }}>
+    <section style={{ padding: '140px 0', background: 'var(--atl-dark)', position: 'relative', overflow: 'hidden' }}>
       <div className="container">
         <div className="reveal" style={{ textAlign: 'center', marginBottom: '80px' }}>
           <SectionLabel light>Por qué existimos</SectionLabel>

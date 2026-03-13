@@ -47,8 +47,7 @@ export default function SpaceCard({ space, large }: SpaceCardProps) {
           position:   'absolute',
           inset:      0,
           background: CARD_GRADIENTS[space.id] ?? 'var(--atl-dark)',
-          /* SWAP TO: backgroundImage: `url('${space.cardImage}')`, backgroundSize: 'cover', backgroundPosition: 'center' */
-          transition: 'transform 0.7s cubic-bezier(0.4,0,0.2,1)',
+          backgroundImage: `url('${space.cardImage}')`, backgroundSize: 'cover', backgroundPosition: 'center'
         }}
       />
 
@@ -79,9 +78,9 @@ export default function SpaceCard({ space, large }: SpaceCardProps) {
         <p
           style={{
             fontFamily:    'var(--font-wide)',
-            fontSize:      '11px',
+            fontSize:      '16px',
             letterSpacing: '0.35em',
-            color:         'var(--atl-amber)',
+            color:       '#fff',
             marginBottom:  '8px',
           }}
         >

@@ -8,8 +8,8 @@ export const SITE = {
   name:        'ATL Café',
   tagline:     'Más que café. Un espacio para crear.',
   description: 'Espacio de valor. Café de especialidad, arte y comunidad en el corazón de León, Guanajuato.',
-  address:     'Panorame 907, León, Guanajuato',
-  mapsUrl:     'https://maps.google.com/?q=Panorame+907+Leon+Guanajuato',
+  address:     'Panorama 907, León, Guanajuato',
+  mapsUrl:     'https://maps.google.com/?q=Panorama+907+Leon+Guanajuato',
   instagram:   'https://www.instagram.com/atl_cafe/',
   tiktok:      'https://www.tiktok.com/@atlcafe',
   instagramHandle: '@atl_cafe',
@@ -55,8 +55,8 @@ export const SPACES: Space[] = [
     shortDesc: 'Café orgánico de Chiapas y Oaxaca, trabajado con comercio justo y trato directo con los cafetaleros.',
     longDesc:  'Contamos con café de especialidad de Chiapas y de Oaxaca donde se trabaja por medio del comercio justo. Brindamos apoyo de asesorías y finanzas a los cafetaleros, trabajando sin intermediarios, lo que permite tener la comunicación directa con ellos, asegurando el pago justo y el café de especialidad de calidad y con certificaciones.',
     href:      '/cafe',
-    cardImage: '/images/spaces/cafe-espacio.jpg',
-    heroImage: '/images/spaces/cafe-hero.jpg',
+    cardImage: '/images/spaces/cafe_especialidad.webp',
+    heroImage: '/images/spaces/cafe_especialidad.webp',
     highlights: ['Sin intermediarios', 'Comercio Justo', 'Q-Score 83.5', 'Chiapas · Oaxaca'],
   },
   {
@@ -66,8 +66,8 @@ export const SPACES: Space[] = [
     shortDesc: 'Espacio abierto en todo horario. Lienzos, mándalas, cerámica, pirograbado y más.',
     longDesc:  'El espacio de taller de arte es abierto al público en todo horario, en el cual pueden elegir su actividad favorita como lienzos, mándalas, bolsas, espejos, piezas de cerámica, termos, separadores y postales para poder crear. ATL ofrece todo el material necesario para cada obra, desde acuarelas, óleos, acrílicos, colores, plumones, textiles y máquina de pirógrafo. Si no terminan sus piezas se pueden resguardar y continuar con ellas otro día sin costo adicional.',
     href:      '/taller-de-arte',
-    cardImage: '/images/spaces/taller-arte.jpg',
-    heroImage: '/images/spaces/taller-hero.jpg',
+    cardImage: '/images/spaces/taller1.webp',
+    heroImage: '/images/spaces/cafe_especialidad.webp',
     highlights: ['Abierto todo el día', 'Material incluido', 'Sin reservación', 'Piezas resguardadas'],
   },
   {
@@ -77,8 +77,8 @@ export const SPACES: Space[] = [
     shortDesc: 'Para todo artista, sin importar trayectoria ni género. Digital, escultura, pintura, danza y música.',
     longDesc:  'El espacio de galería es para todo artista, sin importar el tiempo que lleven de trayectoria, la edad o el género. Lo que se busca en ATL es darle la oportunidad a todas las personas que busquen crear y compartir arte en todas sus ramas ya sea, digital, escultura, pintura, danza, música, etc. Se hace una inauguración oficial de las obras y el tiempo de duración entre cada obra es de 2 meses por artista.',
     href:      '/galeria',
-    cardImage: '/images/spaces/galeria.jpg',
-    heroImage: '/images/spaces/galeria-hero.jpg',
+    cardImage: '/images/spaces/galeria2.webp',
+    heroImage: '/images/spaces/cafe_especialidad.webp',
     highlights: ['Inauguración oficial', '2 meses por artista', 'Todas las disciplinas', 'Sin restricciones'],
   },
   {
@@ -88,8 +88,8 @@ export const SPACES: Space[] = [
     shortDesc: 'Joyería, serigrafía, escultura y más. El espacio disponible para talleristas por dinámica de consumo.',
     longDesc:  'Se ofrece el espacio de ATL para cursos y talleres creativos donde los talleristas pueden seleccionar la fecha más conveniente y se otorga el espacio a través de una dinámica de consumo. Se han llevado a cabo talleres de toda clase como joyería, cerámica, escultura, arte, serigrafía, etc. Se busca apoyar a los talleristas por medio del espacio y la accesibilidad.',
     href:      '/cursos',
-    cardImage: '/images/spaces/cursos.jpg',
-    heroImage: '/images/spaces/cursos-hero.jpg',
+    cardImage: '/images/spaces/cursos1.webp',
+    heroImage: '/images/spaces/cursos1.webp',
     highlights: ['Fecha a elegir', 'Dinámica de consumo', 'Joyería · Cerámica · Serigrafía', 'Apoyo a talleristas'],
   },
 ]
@@ -163,12 +163,11 @@ export const COFFEE_DATA = {
 // (swap out question/options each week, or connect to CMS)
 // ============================================================
 export const COLAB_POLL = {
-  weekLabel: 'Semana 12 · Marzo 2026',
-  question:  '¿Qué café quieres que ATL destaque la próxima semana?',
+  weekLabel: 'Semana 1 · Marzo 2026',
+  question:  '¿Les gustaria tener su marca de café o cafetería?',
   options: [
-    { id: 'chiapas', label: 'Café de Chiapas',    pct: 52 },
+    { id: 'chiapas', label: 'Café de Chiapas',    pct: 1 },
     { id: 'oaxaca',  label: 'Café de Oaxaca',      pct: 31 },
-    { id: 'blend',   label: 'Blend Especial ATL',  pct: 17 },
   ],
 } as const
 

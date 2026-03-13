@@ -11,7 +11,7 @@ export default function CafePage() {
   useReveal()
   return (
     <>
-      <PageHero
+      <PageHero 
         eyebrow="Café de Especialidad"
         title="Del campo"
         titleItalic="a tu taza."

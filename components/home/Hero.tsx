@@ -1,4 +1,5 @@
 import { SITE } from '@/lib/constants'
+import HeroCoffeeBeans from '@/components/effects/HeroCoffeeBeans'
 
 export default function Hero() {
   return (
@@ -7,8 +8,22 @@ export default function Hero() {
         position: 'relative', height: '100vh', minHeight: '600px',
         display: 'flex', alignItems: 'flex-end',
         overflow: 'hidden', background: 'var(--atl-espresso)',
-      }}
+      }}  
     >
+
+                    <section
+                style={{
+                  position: 'relative',
+                  overflow: 'hidden',
+                  minHeight: '100vh',
+                }}
+              >
+                <HeroCoffeeBeans />
+
+                <div style={{ position: 'relative', zIndex: 2 }}>
+                  {/* contenido del hero */}
+                </div>
+              </section>
       {/*
        * IMAGE SLOT — HERO BACKGROUND
        * File: /public/images/hero/hero-main.jpg
@@ -28,7 +43,7 @@ export default function Hero() {
 
       <div className="container" style={{ position: 'relative', zIndex: 2, paddingBottom: '80px', paddingTop: 'var(--nav-h)', maxWidth: '900px' }}>
         <p style={{ fontFamily: 'var(--font-wide)', fontSize: '13px', letterSpacing: '0.35em', color: 'var(--atl-amber)', marginBottom: '24px', opacity: 0, transform: 'translateY(20px)', animation: 'fadeUp 0.8s 0.3s ease forwards' }}>
-          León, Guanajuato · Panorame 907
+          León, Guanajuato · Panorama 907
         </p>
         <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(48px, 8vw, 96px)', fontWeight: 900, lineHeight: 0.95, color: '#fff', marginBottom: '32px' }}>
           <span style={{ display: 'block', opacity: 0, transform: 'translateY(40px)', animation: 'fadeUp 0.9s 0.5s ease forwards' }}>Más que</span>
@@ -49,7 +64,7 @@ export default function Hero() {
 
       <div className="hero-scroll-indicator" style={{ position: 'absolute', bottom: '40px', right: '64px', zIndex: 2, display: 'flex', alignItems: 'center', gap: '12px', color: 'rgba(255,255,255,0.4)', fontSize: '11px', letterSpacing: '0.2em', textTransform: 'uppercase', opacity: 0, animation: 'fadeIn 1s 1.5s ease forwards', fontFamily: 'var(--font-body)' }}>
         <span style={{ width: '40px', height: '1px', background: 'var(--atl-amber)', display: 'block', animation: 'scrollPulse 2s 1.5s ease-in-out infinite' }} />
-        Scroll
+      
       </div>
       <style>{`@media(max-width:768px){.hero-scroll-indicator{display:none}}`}</style>
     </section>

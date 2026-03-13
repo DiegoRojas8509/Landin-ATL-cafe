@@ -41,15 +41,11 @@ export default function PageHero({
         style={{
           position:   'absolute',
           inset:      0,
-          /*
-           * ── IMAGE SLOT ──────────────────────────────────────
-           * Replace gradient with:
-           *   backgroundImage: heroImage ? `url('${heroImage}')` : gradient,
-           *   backgroundSize: 'cover',
-           *   backgroundPosition: 'center',
-           * ────────────────────────────────────────────────────
-           */
-          background: gradient,
+          
+          backgroundImage: heroImage ? `url('${heroImage}')` : gradient,
+           backgroundSize: 'cover',
+           backgroundPosition: 'center',
+           
         }}
       />
       {/* Overlay */}
