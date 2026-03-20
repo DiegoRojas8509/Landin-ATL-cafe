@@ -64,7 +64,7 @@ export default function Navbar() {
       >
         {/* Logo */}
         <Link href="/" style={{ fontFamily: 'var(--font-wide)', fontSize: '28px', letterSpacing: '0.12em', color: '#fff', textDecoration: 'none' }}>
-          <img src="/images/logo3.png" alt="ATL Café" style={{ height: '35px', width: 'auto' }}/>
+          <img src="/images/icons/logo3.png" alt="ATL Café" style={{ height: '35px', width: 'auto' }}/>
         </Link>
 
         {/* Desktop links */}

@@ -30,7 +30,7 @@ export default function Hero() {
           zIndex: 0,
         }}
       >
-        <source src="/images/video/0319.mp4" type="video/mp4" />
+        <source src="/images/video/videoCOM.mp4" type="video/mp4" />
       </video>
 
       {/* Overlay oscuro */}

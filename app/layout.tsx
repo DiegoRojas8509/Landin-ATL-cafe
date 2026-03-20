@@ -9,32 +9,32 @@ import { SEO_DEFAULTS } from '@/lib/constants'
 
 // ── Google Fonts via next/font (zero layout shift, self-hosted) ──
 const playfair = Playfair_Display({
-  subsets:  ['latin'],
-  weight:   ['400', '700', '900'],
-  style:    ['normal', 'italic'],
+  subsets: ['latin'],
+  weight: ['400', '700', '900'],
+  style: ['normal', 'italic'],
   variable: '--font-playfair',
-  display:  'swap',
+  display: 'swap',
 })
 
 const dmSans = DM_Sans({
-  subsets:  ['latin'],
-  weight:   ['300', '400', '500'],
+  subsets: ['latin'],
+  weight: ['300', '400', '500'],
   variable: '--font-dm-sans',
-  display:  'swap',
+  display: 'swap',
 })
 
 const bebas = Bebas_Neue({
-  subsets:  ['latin'],
-  weight:   ['400'],
+  subsets: ['latin'],
+  weight: ['400'],
   variable: '--font-bebas',
-  display:  'swap',
+  display: 'swap',
 })
 
 // ── Site-wide metadata ──
 export const metadata: Metadata = {
   metadataBase: new URL('https://atlcafe.mx'),
   title: {
-    default:  SEO_DEFAULTS.defaultTitle,
+    default: SEO_DEFAULTS.defaultTitle,
     template: SEO_DEFAULTS.titleTemplate,
   },
   description: SEO_DEFAULTS.description,
@@ -42,11 +42,15 @@ export const metadata: Metadata = {
     ...SEO_DEFAULTS.openGraph,
   },
   twitter: {
-    card:    'summary_large_image',
+    card: 'summary_large_image',
     creator: SEO_DEFAULTS.twitter.handle,
   },
+  icons: {
+    icon: '/images/icons/logo512x512.png',
+    shortcut: '/images/icons/logo512x512.png',
+  },
   robots: {
-    index:  true,
+    index: true,
     follow: true,
   },
 }
@@ -62,18 +66,11 @@ export default function RootLayout({
       className={`${playfair.variable} ${dmSans.variable} ${bebas.variable}`}
     >
       <body>
-        {/* Custom cursor — hidden on touch devices via CSS */}
         <Cursor />
-
-        {/* Sticky navigation */}
         <Navbar />
-
-        {/* Page content with transition wrapper */}
         <PageTransition>
           <main>{children}</main>
         </PageTransition>
-
-        {/* Site-wide footer */}
         <Footer />
       </body>
     </html>
