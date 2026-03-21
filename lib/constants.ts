@@ -98,8 +98,8 @@ export const SPACES: Space[] = [
   },
   {
     id:        'psicologia',
-    tag:       '05 — Psicologia',
-    name:      'Consultorios Psicologicos',
+    tag:       '05 — Suplemental',
+    name:      'Atención Psicológica',
     shortDesc: 'Un espacio seguro para tomar terapia.',
     longDesc:  'Contamos con espacios de consultios psicologicos para si estas en el ambito de la psicologia clinica pueda hacer uso de los espacios para dar tu servicio de terapia.',
     href:      '/psicologia',
